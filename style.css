@@ -10,6 +10,12 @@ body, div {
 }
 
 #header {
+	border-bottom: 1px solid #5f99cf;
+    background-color: #cee3f8;
+	position: relative;
+}
+
+#headerTop {
 	background-color: #f0f0f0;
 	text-transform: uppercase;
     border-bottom: 1px solid gray;
@@ -22,14 +28,15 @@ body, div {
 	display : inline;
 	list-style : none;
 	margin : 0;
+	padding : 0;
 }
 
-#header a {
+#headerTop a {
 	color : black;
 	text-decoration : none;
 }
 
-#header a:hover {
+#headerTop a:hover {
 	text-decoration : underline;
 }
 
@@ -61,6 +68,60 @@ body, div {
 	background-image : url(https://www.redditstatic.com/droparrowgray.gif);
 }
 
+#headerLeft {
+	float : left;
+	font-size : larger;
+	font-weight : bold;
+}
+
+#headerLeft li {
+	background-color : #eff7ff;
+	padding: 2px 6px 0 6px;
+	margin: 0 3px;
+	border-bottom : 1px solid #5f99cf;	
+}
+
+#headerLeft a {
+	color : #369;
+	text-decoration : none;
+}
+
+#headerLeft .selected {
+	background-color : white;
+	border : 1px solid #5f99cf;
+	border-bottom : 1px solid white;
+}
+
+#headerLeft .selected a {
+	color : orangered;
+}
+
+#headerRight {
+	padding : 4px;
+	background-color : #EFF7FF;
+	border-top-left-radius: 7px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#headerRight a {
+	color : #369;
+	text-decoration : none;
+}
+
+#redditImg {
+	background-image: url(https://www.redditstatic.com/sprite-reddit.bTLvdEETokI.png);
+    background-position: 0px -1323px;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 120px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 3px;
+	margin-top: 3px;
+	margin-right: 5px;
+}
 
 
 #content {
@@ -73,8 +134,8 @@ body, div {
     margin: 0px .7ex 0px .7ex;
 }
 
-/* .group:after { */
-	/* content: ""; */
-	/* display: table; */
-	/* clear: both; */
-/* } */
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
