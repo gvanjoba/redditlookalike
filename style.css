@@ -1,3 +1,77 @@
 body {
-	background : blue;
+	font: normal x-small verdana,arial,helvetica,sans-serif;
+	background-color: white;
+	white-space: nowrap;
 }
+
+body, div {
+	margin : 0px;
+	padding : 0px;
+}
+
+#header {
+	background-color: #f0f0f0;
+	text-transform: uppercase;
+    border-bottom: 1px solid gray;
+    font-size: 90%;
+    height: 18px;
+    line-height: 18px;
+}
+
+#header ul, li {
+	display : inline;
+	list-style : none;
+}
+
+#header a {
+	color : black;
+	text-decoration : none;
+}
+
+#header a:hover {
+	text-decoration : underline;
+}
+
+#srList {
+	overflow : hidden;
+}
+
+#srListMore {
+	background-color : #f0f0f0;
+	position: absolute;
+	top : 0;
+	right : 0;
+	font-weight : bold;
+	padding-right : 20px;
+	padding-left : 10px;
+	cursor : pointer;
+}
+
+#headerSubreddit {
+	background: none no-repeat scroll center right;	
+	float: left;
+    vertical-align: bottom;
+    padding-right: 21px;
+	margin-right : 11px;
+	padding-left: 5px;
+    color: black;
+    font-weight: normal;
+    cursor: pointer;
+	background-image : url(https://www.redditstatic.com/droparrowgray.gif);
+}
+
+#content {
+	margin-top: 10%;
+	height: auto;
+}
+
+.divider {
+	color: gray;
+    margin: 0px .7ex 0px .7ex;
+}
+
+/* .group:after { */
+	/* content: ""; */
+	/* display: table; */
+	/* clear: both; */
+/* } */
