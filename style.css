@@ -2,7 +2,8 @@ body {
 	font: normal x-small verdana,arial,helvetica,sans-serif;
 	background-color: white;
 	white-space: nowrap;
-	overflow-y: scroll;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 body, div {
@@ -231,11 +232,23 @@ body, div {
 	white-space: normal;
 	overflow-x: hidden;
 	width: 100%;
+	height: 80px;
 }
 
-.post p{
-	
-	width 100%;
+.postIndex {
+	width: 20px;
+	margin-top: 20px;
+	margin-right: 10px;
+	color: lightgray;
+	font-family: arial;
+	font-size: medium;
+	text-align: right;
+	float: left;
+}
+
+.post img{
+	width: inherit;
+	height: 100%;
 }
 
 .small {
