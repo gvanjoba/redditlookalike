@@ -9,10 +9,37 @@
 			<div class='group' id='headerRight'><span style='color:gray'>Want to join? <a href='#'>Log in</a> or <a href='#'>sign up</a> in seconds.</span><span class='divider'> | </span><a href='#' style='font-weight:bold'>English</a></div> <!-- #headerRight -->
 		</div> <!-- #header -->
 		<div class='group' id='sideBar'>
-		
+			<form action='#' id='search'>
+				<input type='text' placeholder='search' id='searchInput'/>
+				<input type='submit' value="" id='searchSubmit'> </input>
+			</form>
+			<form action='#' id='login'>
+				<input type='text' placeholder='username' id='loginUser'/>
+				<input type='password' placeholder='password' id='loginPass'/>
+				<br>
+				<div style="padding-top: 10px; margin: 5px; display: inline-block;">
+					<input type="checkbox" id="rememberMe" style="vertical-align:middle">
+					<label for="rememberMe" style="margin-right: 15px;">remember me</label>
+					<a href="#resetPass">reset password</a>
+				</div>
+				<input type='submit' value='login' style="position: absolute; bottom:5px; right: 5px;"/>
+			</form>
 		</div> <!-- #sideBar -->
 		<div class='group' id='content'>
-		
+			<div id='contentHeader' class='group'>
+				<span id='icon'></span>
+				<span style="color:darkslategray">trenging subredits</span>
+				<a href='#' class='trending'>r/westworld</a>
+				<a href='#' class='trending'>r/SelfSufficiency</a>
+				<a href='#' class='trending'>r/100yearsago</a>
+				<a href='#' class='trending'>r/justfriendshome</a>
+				<a href='#' class='trending'>r/GamePhysics</a>
+				<a href='#' class='grayLink'>X comments</a>
+			</div>
+			<div class='group post small'>
+				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+			</div>
+			
 		</div> <!-- #content -->
 	</body>
 </html>

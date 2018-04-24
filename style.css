@@ -2,6 +2,7 @@ body {
 	font: normal x-small verdana,arial,helvetica,sans-serif;
 	background-color: white;
 	white-space: nowrap;
+	overflow-y: scroll;
 }
 
 body, div {
@@ -50,7 +51,7 @@ body, div {
 	top : 0;
 	right : 0;
 	font-weight : bold;
-	padding-right : 15px;
+	padding-right : 5px;
 	padding-left : 15px;
 	cursor : pointer;
 }
@@ -123,10 +124,122 @@ body, div {
 	margin-right: 5px;
 }
 
+#sideBar {
+	width : 300px;
+	float : right;
+	position : relative;
+	padding : 7px;
+}
 
-#content {
-	margin-top: 10%;
+#search {
+	border: 1px solid gray;
+	width: 100%;
+	position: relative;
+}
+
+#searchInput {
+	border : none;
+	padding: 6px 25px 6px 6px;
+	width : 100%;
+	font-size : 13px;
+}
+
+#searchSubmit {
+    background-color: transparent;
+    background-image: url(https://www.redditstatic.com/sprite-reddit.bTLvdEETokI.png);
+    background-position: -60px -1667px;
+    background-repeat: no-repeat;
+    border: none;
+	margin-left: -30px;
+	width: 13px;
+	height: 13px;
+	cursor: pointer;
+}
+
+#searchSubmit:hover {
+	background-position:-41px -1667px;
+}
+
+#login {
+	border: 1px solid gray;
+	width: 100%;
+	position: relative;
+}
+
+#loginUser, #loginPass {
+	padding: 1.5%;
+	width:47.5%;
+	font-size: 12px;
+	margin: 1.5%;
+}
+
+#loginUser {
+	margin-right: 0.5%;	
+}
+
+#loginPass {
+	margin-left: 0.5%;
+}
+
+#login a {
+	text-decoration: none;
+	color: gray;
+	cursor: pointer;
+}
+
+#content {	
+	width: 100%;
 	height: auto;
+	padding-left: 15px;
+}
+
+#contentHeader {
+	padding-top: 10px;
+	padding-left: 5%;
+	height: 15px;
+}
+
+#contentHeader .trending {
+	text-decoration: none;
+	cursor: pointer;
+	padding-left: 5px;
+}
+
+.grayLink {
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+	color: gray;
+	padding-left: 5px;
+}
+
+.grayLink:hover {
+	text-decoration: underline;
+}
+
+#contentHeader #icon {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	background-image: url(https://www.redditstatic.com/sprite-reddit.bTLvdEETokI.png);
+	background-position: -21px -1667px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.post {
+	white-space: normal;
+	overflow-x: hidden;
+	width: 100%;
+}
+
+.post p{
+	
+	width 100%;
+}
+
+.small {
+	width: calc(100% - 335px);
 }
 
 .divider {
