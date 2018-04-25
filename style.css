@@ -209,8 +209,8 @@ body, div {
 .grayLink {
 	text-decoration: none;
 	cursor: pointer;
-	font-weight: bold;
-	color: gray;
+	font-weight: bold !important;
+	color: gray !important;
 	padding-left: 5px;
 }
 
@@ -237,18 +237,89 @@ body, div {
 
 .postIndex {
 	width: 20px;
-	margin-top: 20px;
-	margin-right: 10px;
+	margin: 30px 0;
+	vertical-align: center;
 	color: lightgray;
 	font-family: arial;
 	font-size: medium;
-	text-align: right;
+	text-align: center;
 	float: left;
 }
 
+.arrowUp, .arrowDown {
+	margin: auto;
+	width: 15px;
+	height: 14px;
+	cursor: pointer;
+}
+
+.arrowUp {
+	background-image: url(https://www.redditstatic.com/sprite-reddit.bTLvdEETokI.png);
+    background-position: -42px -1647px;
+    background-repeat: no-repeat;
+}
+
+.arrowDown {
+	background-image: url(https://www.redditstatic.com/sprite-reddit.bTLvdEETokI.png);
+    background-position: 0px -1647px;
+    background-repeat: no-repeat;
+}
+
+.rank {
+	float: left;
+	width: 50px;
+	margin: 15px 0;
+	color: lightgray;
+	font-size: small;
+	font-weight: bold;
+	display: block;
+	
+}
+
+.post .votes {
+	line-height: 20px;
+	text-align: center;
+	
+}
+
 .post img{
-	width: inherit;
 	height: 100%;
+	display: inline;
+	cursor: pointer;
+	float: left;
+}
+
+.postText {
+	float: left;
+	margin-left: 5px;
+	width: calc(100% - 155px);
+}
+
+.postHeader {	
+	display: inline;
+	word-spacing: normal;
+	margin: 10px 10px 0px 0px;
+}
+
+.postHeader a {
+	text-decoration: none;
+	color: blue;
+	font-size: medium;
+	font-weight: normal;
+}
+
+.postDetails {
+	height: 30px;
+}
+
+.postDetails a {
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.postDetails a:hover {
+	text-decoration: underline;
+	font-weight: normal;
 }
 
 .small {
